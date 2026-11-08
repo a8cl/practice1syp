@@ -10,6 +10,7 @@ public class TaskTwo {
         System.out.println(result);
     }
     public static double calculate(double x) {
-        return Math.pow(Math.sin(x), 2) - Math.cos(2*x) + Math.tan(x);
+        double radians = Math.toRadians(x);
+        return Math.pow(Math.sin(radians), 2) - Math.cos(2*radians) + Math.tan(radians);
     }
 }
